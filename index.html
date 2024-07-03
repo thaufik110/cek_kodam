@@ -367,7 +367,7 @@ SCRIPT BY © RizalDev
         function redeemCode() {
             const redeemCodeInput = document.getElementById('redeemCodeInput').value;
             if (redeemCodes.includes(redeemCodeInput) && !redeemed[userIP]) {
-                usageCount += 9999999999999999999;
+                usageCount += 100;
                 localStorage.setItem('usageCount', usageCount);
                 redeemed[userIP] = true;
                 localStorage.setItem('redeemed', JSON.stringify(redeemed));
