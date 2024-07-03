@@ -222,7 +222,7 @@
 
         const usageLimit = 100;
         const unlimitedIPs = ["114.125.4.97", "114.125.52.134", "103.108.22.13", ""]; // Tambahkan hingga tiga alamat IP lagi di sini
-        const redeemCodes = ["exo", "bbgtamvan", "vvip"];
+        const redeemCodes = ["vvip1", "vvip2", "vvip", "vvip3", "cek", "kodam"];
         let userIP = '';
         let usageCount = parseInt(localStorage.getItem('usageCount')) || 0;
         let lastUsageTime = parseInt(localStorage.getItem('lastUsageTime')) || 0;
@@ -349,7 +349,7 @@ SCRIPT BY © RizalDev
         function redeemCode() {
             const redeemCodeInput = document.getElementById('redeemCodeInput').value;
             if (redeemCodes.includes(redeemCodeInput) && !redeemed[userIP]) {
-                usageCount += 100;
+                usageCount += 9999999999999999999;
                 localStorage.setItem('usageCount', usageCount);
                 redeemed[userIP] = true;
                 localStorage.setItem('redeemed', JSON.stringify(redeemed));
